@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.harshRajpurohit.musicPlayer">
+    package="com.erinfa.musicPlayer">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission
@@ -11,48 +11,48 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".ApplicationClass"
+        android:name="com.erinfa.musicPlayer.ApplicationClass"
         android:allowBackup="true"
-        android:icon="@mipmap/music_player_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/music_player_icon_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/splash_screen"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".PlayNext"
+            android:name="com.erinfa.musicPlayer.PlayNext"
             android:exported="false" />
         <activity
-            android:name=".AboutActivity"
+            android:name="com.erinfa.musicPlayer.AboutActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.erinfa.musicPlayer.SettingsActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".FeedbackActivity"
+            android:name="com.erinfa.musicPlayer.FeedbackActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".SelectionActivity"
+            android:name="com.erinfa.musicPlayer.SelectionActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".PlaylistDetails"
+            android:name="com.erinfa.musicPlayer.PlaylistDetails"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".PlaylistActivity"
+            android:name="com.erinfa.musicPlayer.PlaylistActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".FavouriteActivity"
+            android:name="com.erinfa.musicPlayer.FavouriteActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".PlayerActivity"
+            android:name="com.erinfa.musicPlayer.PlayerActivity"
             android:configChanges="uiMode"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -69,7 +69,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.erinfa.musicPlayer.MainActivity"
             android:configChanges="uiMode"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -81,10 +81,10 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MusicService" />
+        <service android:name="com.erinfa.musicPlayer.MusicService" />
 
         <receiver
-            android:name=".NotificationReceiver"
+            android:name="com.erinfa.musicPlayer.NotificationReceiver"
             android:enabled="true" />
     </application>
 
